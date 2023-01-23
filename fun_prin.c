@@ -13,7 +13,6 @@ int _printf(const char *format, ...)
 	char buff[BUFSIZ];
 
 	va_start(valist, format);
-
 	while (format && format[i])
 	{
 		if (format[i] != '\0')
@@ -33,28 +32,17 @@ int _printf(const char *format, ...)
 				k = 0;
 				while (f[k] != '\0')
 				{
-					buff[j] = f[k];
-					j++;
-					k++;
-				}
-				break;
+					buff[j] = f[k], j++, k++;
+				} break;
 			}
 			case '%':
 			{
-				buff[j] = format[i];
-				j++;
-				break;
-
-			}
-			}
-		}
+				buff[j] = format[i], j++, break;
+			} } }
 		else
-		{
-			buff[j] = format[i];
+		{	buff[j] = format[i];
 			j++;
-		}
-		i++;
-	}
+		} i++ ; }
 	write(1, buff, j);
 	return (j);
 }

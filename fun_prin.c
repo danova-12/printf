@@ -11,9 +11,10 @@ int _printf(const char *format, ...)
 	int k;
 	va_list valist;
 	char buff[BUFSIZ];
+
 	va_start(valist, format);
 
-	while(format && format[i])
+	while (format && format[i])
 	{
 		if (format[i] != '\0')
 		{
@@ -22,14 +23,14 @@ int _printf(const char *format, ...)
 			{
 			case 'c':
 			{
-				 buff[j] = (char)(va_arg(valist,int));
-				 j++;
-				 break;
+				 buff[j] = (char)(va_arg(valist, int));
+				 j++, break;
 			}
 			case 's':
 			{
-				char *f = va_arg(valist,char*);
-				k=0;
+				char *f = va_arg(valist, char*);
+
+				k = 0;
 				while (f[k] != '\0')
 				{
 					buff[j] = f[k];
@@ -49,7 +50,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			buff[j]= format[i];
+			buff[j] = format[i];
 			j++;
 		}
 		i++;

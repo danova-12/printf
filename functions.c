@@ -93,3 +93,30 @@ int print_n(va_list n)
 	}
 	return (counter);
 }
+/**
+ * print_b - print binary
+ * @b: input parameter
+ *
+ * Return: number of bits
+ */
+int print_b(va_list b)
+{
+	int counter = 0, i;
+	unsigned int array[32];
+	unsigned int div;
+	
+	div = va_arg(b, int);
+	while (div > 0)
+	{
+		array[counter] = div % 2;
+		div = div / 2;
+		counter++;
+	}
+	for (j = counter - 1; j >= 0; j--)
+	{
+		_putchar('0' + array[j]);
+	}
+	return (counter);
+}
+			
+	

@@ -101,7 +101,7 @@ int print_n(va_list n)
  */
 int print_b(va_list b)
 {
-	int counter = 0, i;
+	int counter = 0, j;
 	unsigned int array[32];
 	unsigned int div;
 	

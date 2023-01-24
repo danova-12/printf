@@ -49,7 +49,7 @@ int print_string(va_list s)
 }
 /**
  * print_n - Print number
- * @n: input parameter  to  compute
+ * @n: input parameter to compute
  *
  * Return: count (number of bytes)
  */
@@ -118,5 +118,3 @@ int print_b(va_list b)
 	}
 	return (counter);
 }
-			
-	

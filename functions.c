@@ -105,6 +105,11 @@ int print_b(va_list b)
 	unsigned int div;
 
 	div = va_arg(b, int);
+	if (div == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
 	while (div > 0)
 	{
 		array[counter] = div % 2;

@@ -10,16 +10,15 @@ int _putchar(char c)
 	return (write(1, &c, 1));
 }
 /**
- * printc - Entry function. Print character
- * @list: variable va_list
+ * printc - Print character
+ * @list: input parameter
  *
- * Return: 1 (nbyte)
+ * Return: 1
  */
 int printc(va_list list)
 {
 	_putchar(va_arg(list, int));
 	return (1);
-
 }
 /**
  * print_string - Write string
@@ -104,7 +103,7 @@ int print_b(va_list b)
 	int counter = 0, j;
 	unsigned int array[32];
 	unsigned int div;
-	
+
 	div = va_arg(b, int);
 	while (div > 0)
 	{

@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * _putchar - Entry function. Write characteres
- * @c: variable va_list
+ * _putchar - Write characteres
+ * @c: input parameter
  *
  * Return: Writed character
  */
@@ -22,10 +22,10 @@ int printc(va_list list)
 
 }
 /**
- * print_string - Entry point. Print string
- * @s: variable va_list
+ * print_string - Write string
+ * @s: input parameter
  *
- * Return: k (nbytes) 6 (NULL)
+ * Return: k (number of bytes) or 6 (NULL)
  */
 int print_string(va_list s)
 {
@@ -48,10 +48,10 @@ int print_string(va_list s)
 	return (k);
 }
 /**
- * print_n - Entry point. Print number
- * @n: Variable va_list
+ * print_n - Print number
+ * @n: input parameter
  *
- * Return: count (nbytes)
+ * Return: count (number of bytes)
  */
 int print_n(va_list n)
 {

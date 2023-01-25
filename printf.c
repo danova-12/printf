@@ -62,6 +62,10 @@ int (*cmp_func(const char a))(va_list)
 		{'d', print_n},
 		{'i', print_n},
 		{'b', print_b},
+		{'u', print_n},
+		{'x', print_x},
+		{'X', print_X},
+		{'o', print_o},
 		{'\0', NULL}
 	};
 

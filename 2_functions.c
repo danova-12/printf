@@ -107,7 +107,8 @@ int print_u(va_list u)
 {
 
 	unsigned int number;
-	unsigned int counter, aux_variable, base;
+	unsigned int aux_variable, base;
+	int counter;
 
 	counter = 0;
 	number = va_arg(u, int);

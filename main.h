@@ -25,5 +25,7 @@ int print_string(va_list s);
 int (*cmp_func(const char a))(va_list);
 int print_n(va_list n);
 int print_b(va_list b);
-
+int print_x(va_list x);
+int print_X(va_list X);
+int print_o(va_list o);
 #endif

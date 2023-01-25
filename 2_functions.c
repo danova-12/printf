@@ -1,3 +1,4 @@
+#include "main.h"
 /**
  * print_x - print hexadecimal numbers
  * in lowercase

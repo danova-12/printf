@@ -28,7 +28,7 @@ int print_x(va_list x)
 		if (array[j] <= 9)
 			_putchar('0' + array[j]);
 		else
-			_putchar('a' + array[j] - 10);
+			_putchar('a' + (array[j] - 10));
 	}
 	return (counter);
 }
@@ -62,7 +62,7 @@ int print_X(va_list X)
 		if (array[j] <= 9)
 			_putchar('0' + array[j]);
 		else
-			_putchar('A' + array[j] - 10);
+			_putchar('A' + (array[j] - 10));
 	}
 	return (counter);
 }

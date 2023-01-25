@@ -69,7 +69,7 @@ int print_X(va_list X)
 }
 /**
  * print_o - print octal numbers
- * @b: input parameter
+ * @o: input parameter
  *
  * Return: number of bits
  */

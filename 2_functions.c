@@ -112,7 +112,7 @@ int print_u(va_list u)
 
 	counter = 0;
 	number = va_arg(u, int);
-	if (number >= 0 && number <= 9)
+	if (number <= 9)
 	{
 		_putchar(number + 48);
 		counter++;
